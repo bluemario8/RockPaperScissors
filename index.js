@@ -17,11 +17,11 @@ function getCpuChoice()
     switch (rng)
     {
     case 0:
-        return "rock";
+        return "Rock";
     case 1:
-        return "paper";
+        return "Paper";
     case 2:
-        return "scissors";
+        return "Scissors";
     }
 }
 
@@ -32,13 +32,13 @@ function rock()
     yourChoiceElem.innerText = "Rock";
     cpuChoiceElem.innerText = cpuChoice;
 
-    if (cpuChoice === "rock")
+    if (cpuChoice === "Rock")
     {
         resultElem.innerText = "Tie";
         tieScore++;
         tieScoreElem.innerText = tieScore;
     }
-    else if (cpuChoice === "paper")
+    else if (cpuChoice === "Paper")
     {
         resultElem.innerText = "Computer Won";
         cpuScore++;
@@ -51,6 +51,7 @@ function rock()
         userScoreElem.innerText = userScore;
     }
 }
+
 function paper()
 {
     let cpuChoice = getCpuChoice();
@@ -58,13 +59,13 @@ function paper()
     yourChoiceElem.innerText = "Paper";
     cpuChoiceElem.innerText = cpuChoice;
 
-    if (cpuChoice === "paper")
+    if (cpuChoice === "Paper")
     {
         resultElem.innerText = "Tie";
         tieScore++;
         tieScoreElem.innerText = tieScore;
     }
-    else if (cpuChoice === "scissors")
+    else if (cpuChoice === "Scissors")
     {
         resultElem.innerText = "Computer Won";
         cpuScore++;
@@ -77,6 +78,7 @@ function paper()
         userScoreElem.innerText = userScore;
     }
 }
+
 function scissors()
 {
     let cpuChoice = getCpuChoice();
@@ -84,13 +86,13 @@ function scissors()
     yourChoiceElem.innerText = "Scissors";
     cpuChoiceElem.innerText = cpuChoice;
 
-    if (cpuChoice === "scissors")
+    if (cpuChoice === "Scissors")
     {
         resultElem.innerText = "Tie";
         tieScore++;
         tieScoreElem.innerText = tieScore;
     }
-    else if (cpuChoice === "rock")
+    else if (cpuChoice === "Rock")
     {
         resultElem.innerText = "Computer Won";
         cpuScore++;

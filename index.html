@@ -9,20 +9,20 @@
 <body>
     <h1>Rock-Paper-Scissors</h1>
 
-    <p id="score">Score: You - <a id="userscore">0</a>
+    <p class="text">Score: You - <a id="userscore">0</a>
                 , Computer - <a id="cpuscore">0</a>
                 , Tie - <a id="tiescore">0</a>
     </p>
 
-    <div class="buttons">
-        <input class="rock" type="button" value="Rock" onclick="rock()">
-        <input class="paper" type="button" value="Paper" onclick="paper()">
-        <input class="scissors" type="button" value="Scissors" onclick="scissors()">
+    <div>
+        <input class="rock buttons" type="button" value="Rock" onclick="rock()">
+        <input class="paper buttons" type="button" value="Paper" onclick="paper()">
+        <input class="scissors buttons" type="button" value="Scissors" onclick="scissors()">
     </div>
 
-    <p>Your choice: <a id="yourchoice"></a></p>
-    <p>Computer's choise: <a id="cpuchoice"></a></p>
-    <p>Result: <a id="result"></a></p>
+    <p class="text">Your choice: <a id="yourchoice"></a></p>
+    <p class="text">Computer's choice: <a id="cpuchoice"></a></p>
+    <p class="text">Result: <a id="result"></a></p>
 
     <script src="index.js"></script>
 </body>
