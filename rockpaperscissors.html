@@ -7,8 +7,23 @@
     <link rel="stylesheet" href="rockpaperscissors.css">
 </head>
 <body>
-    <button class="rock">Rock</button>
-    <button class="paper">Paper</button>
-    <button class="scissors">Scissors</button>
+    <h1>Rock-Paper-Scissors</h1>
+
+    <p id="score">Score: You - <a id="userscore">0</a>
+                , Computer - <a id="cpuscore">0</a>
+                , Tie - <a id="tiescore">0</a>
+    </p>
+
+    <div class="buttons">
+        <input class="rock" type="button" value="Rock" onclick="rock()">
+        <input class="paper" type="button" value="Paper" onclick="paper()">
+        <input class="scissors" type="button" value="Scissors" onclick="scissors()">
+    </div>
+
+    <p>Your choice: <a id="yourchoice">Rock</a></p>
+    <p>Computer's choise: <a id="cpuchoice">Scissors</a></p>
+    <p>Result: <a id="result">You won</a></p>
+
+    <script src="rockpaperscissors.js"></script>
 </body>
 </html>
