@@ -53,9 +53,53 @@ function rock()
 }
 function paper()
 {
-    console.log("paper");
+    let cpuChoice = getCpuChoice();
+
+    yourChoiceElem.innerText = "Paper";
+    cpuChoiceElem.innerText = cpuChoice;
+
+    if (cpuChoice === "paper")
+    {
+        resultElem.innerText = "Tie";
+        tieScore++;
+        tieScoreElem.innerText = tieScore;
+    }
+    else if (cpuChoice === "scissors")
+    {
+        resultElem.innerText = "Computer Won";
+        cpuScore++;
+        cpuScoreElem.innerText = cpuScore;
+    }
+    else
+    {
+        resultElem.innerText = "You won";
+        userScore++;
+        userScoreElem.innerText = userScore;
+    }
 }
 function scissors()
 {
-    console.log("scissors");
+    let cpuChoice = getCpuChoice();
+
+    yourChoiceElem.innerText = "Scissors";
+    cpuChoiceElem.innerText = cpuChoice;
+
+    if (cpuChoice === "scissors")
+    {
+        resultElem.innerText = "Tie";
+        tieScore++;
+        tieScoreElem.innerText = tieScore;
+    }
+    else if (cpuChoice === "rock")
+    {
+        resultElem.innerText = "Computer Won";
+        cpuScore++;
+        cpuScoreElem.innerText = cpuScore;
+    }
+    else
+    {
+        resultElem.innerText = "You won";
+        userScore++;
+        userScoreElem.innerText = userScore;
+    }
 }
